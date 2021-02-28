@@ -8,9 +8,9 @@
 	<description>Java class library for obtaining geolocation information of an IP address.</description>
 	<developers>
 		<developer>
-			<id>jeszy</id>
-			<name>Péter Jeszenszky</name>
-			<email>jeszenszky.peter@inf.unideb.hu</email>
+			<id>tothferenc98</id>
+			<name>Tóth Ferenc</name>
+			<email>tothferenc98@mailbox.unideb.hu</email>
 			<organization>Faculty of Informatics, University of Debrecen</organization>
 			<organizationUrl>http://www.inf.unideb.hu/</organizationUrl>
 		</developer>
@@ -18,8 +18,9 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.build.outputEncoding>UTF-8</project.build.outputEncoding>
-		<maven.compiler.source>11</maven.compiler.source>
-		<maven.compiler.target>11</maven.compiler.target>
+		<maven.compiler.source>15</maven.compiler.source>
+		<maven.compiler.target>15</maven.compiler.target>
+
 		<mainClass>geolocator.GeoLocator</mainClass>
 	</properties>
 	<dependencies>
@@ -54,11 +55,6 @@
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version>
-			</plugin>
-			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
 				<version>3.0.0</version>
@@ -66,7 +62,6 @@
 					<mainClass>${mainClass}</mainClass>
 				</configuration>
 			</plugin>
-
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-shade-plugin</artifactId>
@@ -116,7 +111,7 @@
 	<distributionManagement>
 		<site>
 			<id>shrek</id>
-			<url>scp://@shrek.unideb.hu:2222/home/jeszy/public_html/${project.artifactId}</url>
+			<url>scp://tothferenc98@shrek.unideb.hu:2222/home/tothferenc98/public_html/${project.artifactId}</url>
 		</site>
 	</distributionManagement>
 </project>
